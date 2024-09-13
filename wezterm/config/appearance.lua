@@ -22,7 +22,7 @@ return {
          source = { Color = colors.background },
          height = '100%',
          width = '100%',
-         opacity = 0.96,
+         opacity = 0.86,
       },
    },
 
@@ -44,6 +44,8 @@ return {
    -- cursor_blink_rate = 700,
    -- 关闭声音
    audible_bell = 'Disabled',
+   
+   enable_csi_u_key_encoding = false,
 
    -- window
    window_decorations = "INTEGRATED_BUTTONS|RESIZE",
