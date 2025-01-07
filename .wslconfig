@@ -1,0 +1,7 @@
+# 推荐的一些配置项如下
+[wsl2]                      # 核心配置
+networkingMode=nat
+vmSwitch=WSL # 上图中的Name值
+ipv6=true
+memory=4GB
+processors=2
