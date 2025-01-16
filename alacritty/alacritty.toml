@@ -1,0 +1,11 @@
+[general]
+import = [
+"alacritty-theme/themes/gruvbox_dark.toml",
+]
+working_directory = "C:\\Users\\root"
+live_config_reload = true
+
+
+[font]
+size = 13
+normal = { family = "Consolas", style = "Regular" }
