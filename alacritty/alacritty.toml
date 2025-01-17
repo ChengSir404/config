@@ -1,11 +1,61 @@
 [general]
 import = [
-"alacritty-theme/themes/gruvbox_dark.toml",
+#"alacritty-theme/themes/gruvbox_dark.toml",
+"themes/themes/challenger_deep.toml",
 ]
 working_directory = "C:\\Users\\root"
+# 是否启用配置热更新
 live_config_reload = true
 
+[window]
+# 标题
+title = "Alacritty"
+# 是否允许更改标题
+dynamic_title = false
+dimensions = { columns = 120, lines = 30 }
+# 窗口位置
+#position = { x = Center, y = Center }
+# 窗口的外边框
+decorations = "Full"
+# 不透明度
+opacity = 0.95
 
 [font]
 size = 13
-normal = { family = "Consolas", style = "Regular" }
+# 常规字体
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+# 斜体
+italic = { family = "JetBrainsMono Nerd Font" }
+# 粗体
+bold = { family = "JetBrainsMono Nerd Font" }
+# 斜粗体
+bold_italic = { family = "JetBrainsMono Nerd Font" }
+
+[colors]
+# 如果为‘true’，则使用亮色变体绘制粗体文本。
+draw_bold_text_with_bright_colors = false
+
+
+[selection]
+# 如果设置为 true，则所选文本将被复制到主剪贴板。
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[mouse]
+# 右键复制
+bindings = [
+{ mouse = "Right",action = "Paste" }
+]
+
+
+[bell]
+# 可视铃铛闪烁的持续时间（以毫秒为单位）。“duration”为 '0' 将禁用视觉铃铛动画
+duration = 0
+
+# 光标
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+
+
+[terminal]
+shell = { program = "wsl", args = [ "-d Arch", "-u xiaoyu", "--cd ~"] }
