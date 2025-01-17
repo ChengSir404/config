@@ -58,4 +58,7 @@ style = { shape = "Block", blinking = "Always" }
 
 
 [terminal]
-shell = { program = "wsl", args = [ "-d Arch", "-u xiaoyu", "--cd ~"] }
+# 使用wsl
+#shell = { program = "wsl", args = [ "-d Arch", "-u xiaoyu", "--cd ~"] }
+# 使用powshell
+shell = { program = "pwsh", args = [ "-l"] }
