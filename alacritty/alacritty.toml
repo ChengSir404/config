@@ -12,13 +12,19 @@ live_config_reload = true
 title = "Alacritty"
 # 是否允许更改标题
 dynamic_title = false
-dimensions = { columns = 120, lines = 30 }
+#dimensions = { columns = 140, lines = 32 }
 # 窗口位置
-#position = { x = Center, y = Center }
+#position = { x = 0, y = 0 }
 # 窗口的外边框
 decorations = "Full"
+# 窗口周围添加的空白区域（以像素为单位）
+#padding = { x = 3, y = 3 }
 # 不透明度
 opacity = 0.95
+# 动态填充
+dynamic_padding = true 
+# 窗口最大化
+startup_mode = "Maximized"
 
 [font]
 size = 13
