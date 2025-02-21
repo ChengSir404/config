@@ -4,15 +4,20 @@
 # 如果值为 mirrored，则会启用镜像网络模式。 默认或无法识别的字符串会生成 NAT 网络。
 networkingMode=mirrored
 
-# 仅当 wsl2.networkingMode 设置为 mirrored 时才适用。 如果设置为 True，将会允许容器通过分配给主机的 IP 地址连接到主机，或允许主机通过此方式连接到容器。 始终可以使用 127.0.0.1 环回地址，此选项也允许使用所有额外分配的本地 IP 地址。 仅支持分配给主机的 IPv4 地址。
-hostAddressLoopback=true
-
 # 更改将 DNS 请求从 WSL 代理到 Windows 的方式
-#dnsTunneling=true
+dnsTunneling = false
 #vmSwitch=WSL # 上图中的Name值
-#ipv6=true
+ipv6=true
 memory=4GB
 processors=2
 
 # 如果设置为 true，则 Windows 防火墙规则以及特定于 Hyper-V 流量的规则可以筛选 WSL 网络流量。
 #firewall = false
+
+
+[experimental]
+# 仅当 wsl2.networkingMode 设置为 mirrored 时才适用。 如果设置为 True，将会允许容器通过分配给主机的 IP 地址连接到主机，或允许主机通过此方式连接到容器。 始终可以使用 127.0.0.1 环回地址，此选项也允许使用所有额外分配的本地 IP 地址。 仅支持分配给主机的 IPv4 地址。
+#hostAddressLoopback = true
+
+# 仅当 wsl2.dnsTunneling 设置为 true 时才适用。 指定启用 DNS 隧道的情况下将在 Linux resolv.conf 文件中配置的 nameserver。
+# dnsTunnelingIpAddress = 8.8.8.8
