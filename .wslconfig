@@ -5,11 +5,12 @@
 networkingMode=mirrored
 
 # 更改将 DNS 请求从 WSL 代理到 Windows 的方式
-dnsTunneling = false
+dnsTunneling = true
 #vmSwitch=WSL # 上图中的Name值
 ipv6=false
 memory=4GB
 processors=2
+autoProxy=true
 
 # 如果设置为 true，则 Windows 防火墙规则以及特定于 Hyper-V 流量的规则可以筛选 WSL 网络流量。
 #firewall = false
