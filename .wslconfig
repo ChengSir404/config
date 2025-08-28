@@ -5,7 +5,7 @@
 networkingMode=mirrored
 
 # 更改将 DNS 请求从 WSL 代理到 Windows 的方式
-dnsTunneling = true
+dnsTunneling = false
 #vmSwitch=WSL # 上图中的Name值
 ipv6=false
 memory=4GB
