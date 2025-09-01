@@ -22,3 +22,6 @@ autoProxy=true
 
 # 仅当 wsl2.dnsTunneling 设置为 true 时才适用。 指定启用 DNS 隧道的情况下将在 Linux resolv.conf 文件中配置的 nameserver。
 # dnsTunnelingIpAddress = 8.8.8.8
+
+# 可用值为： disabled、 gradual和 dropCache。 如果值为 disabled，则将禁用 WSL 自动内存回收。 如果值为此值 gradual，则缓存的内存将缓慢且自动回收。 如果值为 dropCache 或未知值，将立即回收缓存内存
+autoMemoryReclaim = gradual
